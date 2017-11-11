@@ -1,2 +1,2 @@
 # HeartBits
-2k17 HeartBits hackathon 
+Private repo for 2k17 HeartBits hackathon 
