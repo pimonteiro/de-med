@@ -19,7 +19,7 @@ def getMeaning(word):
         print("erro somewhere :D")
         print("Possivel prefixo/sufixo")
 
-def parseNotes(path):
+def parseNotes(path, s, o, a, p):
     pattern = re.compile("[SOAP]\)")
     flag = ""
     with open(path) as f:
@@ -28,7 +28,7 @@ def parseNotes(path):
             if(match != None):
                 flag = match.group()
             else:
-                if flag == "S)":
+                if flag == "S)" && flag == "":
                     s.append(line)
                 if flag == "O)":
                     o.append(line)
@@ -39,7 +39,11 @@ def parseNotes(path):
 
 
 def main():
-    parseNotes("anotacao.txt")
+    s = []
+    o = []
+    a = []
+    p = []
+    parseNotes("anotacao.txt", s, o, a, p)
 
 if __name__ == "__main__":
     main()
