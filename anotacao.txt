@@ -1,0 +1,14 @@
+S)
+cena1
+cena2
+cena3
+
+O)
+cena4
+cena5
+
+A)
+cena6
+
+P)
+cena7
