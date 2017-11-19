@@ -49,10 +49,10 @@ def main():
 
     parseNotes("anotacao.txt", s, o, a, p)
     
-    sText = "".join(s) 
-    oText = "".join(o)
-    aText = "".join(a)
-    pText = "".join(p)
+    sText = "".join(s).replace('\n', " ") 
+    oText = "".join(o).replace('\n', " ")
+    aText = "".join(a).replace('\n', " ")
+    pText = "".join(p).replace('\n', " ")
 
     nome = "Filipe"
     sub = "nenhum"
@@ -65,9 +65,7 @@ def main():
     dia = 1
     inter = { "data": data, "anot":[{"dia":dia, "s":sText, "o":oText, "a":aText ,"p":pText}] } 
     
-    jsonF =  [user, inter] 
-    print(json.dumps(jsonF, ensure_ascii=False))
-
-
+    jsonT = str(json.JSONEncoder().encode({"user":user, "internamentos":inter}))
+    print(jsonT)
 if __name__ == "__main__":
     main()
