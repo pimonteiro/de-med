@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 
+import re
+import json
 
 s = []
 o = []
@@ -28,7 +29,7 @@ def parseNotes(path, s, o, a, p):
             if(match != None):
                 flag = match.group()
             else:
-                if flag == "S)" && flag == "":
+                if (flag == "S)" or flag == ""):
                     s.append(line)
                 if flag == "O)":
                     o.append(line)
@@ -43,7 +44,18 @@ def main():
     o = []
     a = []
     p = []
+
     parseNotes("anotacao.txt", s, o, a, p)
+    
+    
+    nome = "Filipe"
+    sub = "nenhum"
+    sns = "0000"
+    centro = "braga"
+    user = { "nome":nome, "sns":sns, "sub_sistema":sub, "centro_saude":centro }
+    
+    print(json.dumps(user))
+
 
 if __name__ == "__main__":
     main()
