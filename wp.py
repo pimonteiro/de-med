@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 import re
 import json
+import datetime
 
 s = []
 o = []
@@ -47,14 +48,24 @@ def main():
 
     parseNotes("anotacao.txt", s, o, a, p)
     
-    
+    sText = "".join(s) 
+    oText = "".join(o)
+    aText = "".join(a)
+    pText = "".join(p)
+
     nome = "Filipe"
     sub = "nenhum"
     sns = "0000"
     centro = "braga"
     user = { "nome":nome, "sns":sns, "sub_sistema":sub, "centro_saude":centro }
+
     
-    print(json.dumps(user))
+    data = str(datetime.date.today())
+    dia = 1
+    inter = { "data": data, "anot":[{"dia":dia, "s":sText, "o":oText, "a":aText ,"p":pText}] } 
+    
+    jsonF =  [user, inter] 
+    print(json.dumps(jsonF))
 
 
 if __name__ == "__main__":

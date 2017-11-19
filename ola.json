@@ -10,12 +10,14 @@
 			"data": "2017-15",
 			"anot": [
 				{
+                "dia":"1"
 				"s" : "sssssss1",
 				"o" : "ooooooo1",
 				"a" : "aaaaaaa1",
 				"p" : "ppppppp1"
 				},
 				{
+                "dia":"2"
 				"s" : "sssssss2",
 				"o" : "ooooooo2",
 				"a" : "aaaaaaa2",
