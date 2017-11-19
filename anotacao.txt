@@ -1,11 +1,18 @@
 S)
-cena1
-cena2
-cena3
+Bem disposta
+Nega algias, nauseas, vómitos, transito intestinal e queixas do TGU
 
 O)
-cena4
-cena5
+Sinais Vitais
+TA 161-61 mmHg
+FC 57-77 bpm
+SpO2 (aa) 94-98%
+TºC 37.5
+SNG 500 mL de conteudo fecaloide
+
+Doente deitada na cama no momento da observação
+CCO (tempo, espaço e pessoa)
+Muscosas ligeiramente desidratadas e coradas. Escleroticas
 
 A)
 cena6
