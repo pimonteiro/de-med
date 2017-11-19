@@ -62,8 +62,8 @@ def main():
     sub = input("Sub-Sistema: ")
     sns = input("SNS: ")
     centro = input("Centro: ")
-
-    parseNotes("anotacao.txt", s, o, a, p)
+    inpu = input("Ficheiro: ")
+    parseNotes(inpu, s, o, a, p)
     valor = buildJson(s, o, a, p, name, sub, sns, centro)
 
 

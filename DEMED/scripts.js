@@ -18,16 +18,18 @@ function harvest_first_report() {
 
 }
 
-var report_text = {"internamentos": [{"data": "2017-11-19", "anot": [{"s": "Inicia quadro de toracalgia direita, com agravamento com a inspiracao sem posicao antalgica. Internada dia 10 de marco por intensificacao da sintomatologia.  ", "p": "Medidas gerais - Vigilancia do estado de consciencia. - Medi\u00e7ao sinais vitais (TA, FC, SatO2, ToC axilar) 8/8h. - Monitoriza\u00e7ao debito urinario 12/12h. - Medi\u00e7\u00e3o glicemia capilar pre-prandial. - Monitorizacao do peso 24/24h. - Dieta hipocalorica sem adi\u00e7ao de sal. - Elimina\u00e7ao dos fatores de risco cardiovascular: aconselhamento nutricional.  Terapeutica empirica da pneumonia adquirida na comunidade: - Azitromicina EV; - Ceftriaxone 2g/dia EV, 7 a 10 dias.  Toracocentese Terapeutica. Para alivio sintomatico. ", "o": "Apresenta melhoria dos sintomas, embora mantenha dor a inspiracao Diminuicao do murmorio vesicular e transmissoes vocais ausentes na base pulmonar direita.  ", "a": "Dispneia para pequenos esforcos; Dor no hemitorax direito de caracteristicas pleuroticas; Temperatura sub-febril.  ", "dia": 1}, {"s": "", "p": "dona", "o": "Cona", "a": "da", "dia": 3}]}, {"data": "2018/20/02"}, {"data": "2839/30/39"}, {"data": "20/10/200"}], "user": {"sub_sistema": "nenhum", "centro_saude": "Guimares", "sns": "220", "nome": "Filipe"}};
+var report_text3 = {"internamentos": [{"data": "2017-11-19", "anot": [{"s": "Inicia quadro de toracalgia direita, com agravamento com a inspiracao sem posicao antalgica. Internada dia 10 de marco por intensificacao da sintomatologia.  ", "p": "Medidas gerais - Vigilancia do estado de consciencia. - Medi\u00e7ao sinais vitais (TA, FC, SatO2, ToC axilar) 8/8h. - Monitoriza\u00e7ao debito urinario 12/12h. - Medi\u00e7\u00e3o glicemia capilar pre-prandial. - Monitorizacao do peso 24/24h. - Dieta hipocalorica sem adi\u00e7ao de sal. - Elimina\u00e7ao dos fatores de risco cardiovascular: aconselhamento nutricional.  Terapeutica empirica da pneumonia adquirida na comunidade: - Azitromicina EV; - Ceftriaxone 2g/dia EV, 7 a 10 dias.  Toracocentese Terapeutica. Para alivio sintomatico. ", "o": "Apresenta melhoria dos sintomas, embora mantenha dor a inspiracao Diminuicao do murmorio vesicular e transmissoes vocais ausentes na base pulmonar direita.  ", "a": "Dispneia para pequenos esforcos; Dor no hemitorax direito de caracteristicas pleuroticas; Temperatura sub-febril.  ", "dia": 1}, {"s": "", "p": "dona", "o": "Cona", "a": "da", "dia": 3}]}, {"data": "2018/20/02"}, {"data": "2839/30/39"}, {"data": "20/10/200"}], "user": {"sub_sistema": "nenhum", "centro_saude": "Guimares", "sns": "220", "nome": "Filipe"}};
 
 var report_text1 = {"user": {"nome": "Filipe Monteiro","sns" : "00000","sub_sistema": "nenhum","centro_saude": "braga"},"internamentos": [{"data": "2017-15","anot": [{"dia": "1","s" : "sssssss1","o" : "ooooooo1","a" : "aaaaaaa1","p": "ppppppp1"},{"dia": "2","s": "sssssss2","o": "ooo2","a" : "aaaaaaa2","p" : "ppppppp2"}]},{"data":"2017-20"}]};
 
 var report_text2 = {"user": {"centro_saude": "BRaga", "nome": "Eduardo", "sns": "30303", "sub_sistema": "Nenhum"}, "internamentos": [{"data": "2017-11-19", "anot": [{"a": "Dispneia para pequenos esforcos; Dor no hemitorax direito de caracteristicas pleuroticas; Temperatura sub-febril.  ", "s": "Inicia quadro de toracalgia direita, com agravamento com a inspiracao sem posicao antalgica. Internada dia 10 de marco por intensificacao da sintomatologia.  ", "dia": 1, "p": "Medidas gerais - Vigilancia do estado de consciencia. - Medi\u00e7ao sinais vitais (TA, FC, SatO2, ToC axilar) 8/8h. - Monitoriza\u00e7ao debito urinario 12/12h. - Medi\u00e7\u00e3o glicemia capilar pre-prandial. - Monitorizacao do peso 24/24h. - Dieta hipocalorica sem adi\u00e7ao de sal. - Elimina\u00e7ao dos fatores de risco cardiovascular: aconselhamento nutricional.  Terapeutica empirica da pneumonia adquirida na comunidade: - Azitromicina EV; - Ceftriaxone 2g/dia EV, 7 a 10 dias.  Toracocentese Terapeutica. Para alivio sintomatico. ", "o": "Apresenta melhoria dos sintomas, embora mantenha dor a inspiracao Diminuicao do murmorio vesicular e transmissoes vocais ausentes na base pulmonar direita.  "}]}]};
 
 
-var report_text3 = {"user": {"sns": "3030", "sub_sistema": "Nenhum", "centro_saude": "BRaga", "nome": "Eduardo"}, "internamentos": [{"anot": [{"dia": 1, "a": "Dispneia para pequenos esforcos; Dor no hemitorax direito de caracteristicas pleuroticas; Temperatura sub-febril.  ", "o": "Apresenta melhoria dos sintomas, embora mantenha dor a inspiracao Diminuicao do murmorio vesicular e transmissoes vocais ausentes na base pulmonar direita.  ", "p": "Medidas gerais - Vigilancia do estado de consciencia. - Medi\u00e7ao sinais vitais (TA, FC, SatO2, ToC axilar) 8/8h. - Monitoriza\u00e7ao debito urinario 12/12h. - Medi\u00e7\u00e3o glicemia capilar pre-prandial. - Monitorizacao do peso 24/24h. - Dieta hipocalorica sem adi\u00e7ao de sal. - Elimina\u00e7ao dos fatores de risco cardiovascular: aconselhamento nutricional.  Terapeutica empirica da pneumonia adquirida na comunidade: - Azitromicina EV; - Ceftriaxone 2g/dia EV, 7 a 10 dias.  Toracocentese Terapeutica. Para alivio sintomatico. ", "s": "Inicia quadro de toracalgia direita, com agravamento com a inspiracao sem posicao antalgica. Internada dia 10 de marco por intensificacao da sintomatologia.  "}, {"dia": 3, "a": "da", "o": "Cona", "p": "dona", "s": ""}], "data": "2017-11-19"}]};
+var report_text = {"user": {"sns": "3030", "sub_sistema": "ADSE", "centro_saude": "BRaga", "nome": "Filipe Monteiro"}, "internamentos": [{"anot": [{"dia": 1, "a": "Dispneia para pequenos esforcos; Dor no hemitorax direito de caracteristicas pleuroticas; Temperatura sub-febril.", "o": "Apresenta melhoria dos sintomas, embora mantenha dor a inspiracao Diminuicao do murmorio vesicular e transmissoes vocais ausentes na base pulmonar direita.", "p": "Medidas gerais - Vigilancia do estado de consciencia. - Medi\u00e7ao sinais vitais (TA, FC, SatO2, ToC axilar) 8/8h. - Monitoriza\u00e7ao debito urinario 12/12h. - Medi\u00e7\u00e3o glicemia capilar pre-prandial. - Monitorizacao do peso 24/24h. - Dieta hipocalorica sem adi\u00e7ao de sal. - Elimina\u00e7ao dos fatores de risco cardiovascular: aconselhamento nutricional. Terapeutica empirica da pneumonia adquirida na comunidade: - Azitromicina EV; - Ceftriaxone 2g/dia EV, 7 a 10 dias. Toracocentese Terapeutica. Para alivio sintomatico.", "s": "Inicia quadro de toracalgia direita, com agravamento com a inspiracao sem posicao antalgica. Internada dia 10 de marco por intensificacao da sintomatologia."}, {"dia": 3, "a": "Apenas parece ter doencas mentais", "o": "Doente apresenta multiplas personalidades, nao parece saudavel.", "p": "medicamentos a base de tranquilizantes.", "s": ""}], "data": "2017-11-19"},{"data": "2017-10-02"},{"data": "2017-05-22"}]};
 
 let inter_atual = 0;
+
+let TUSABES = 0;
 
 
 function texto_ola(){
@@ -118,6 +120,7 @@ function set_informacao(report_text) {
 	document.getElementById('day_current').innerHTML = "Dia " + dia;
 
 	for (var i = 0; i < report_text.internamentos[0].anot.length; i++){
+
 		if (report_text.internamentos[0].anot[i].dia == dia){
 			p = document.createElement('p');
 
@@ -171,30 +174,16 @@ function set_informacao(report_text) {
 }
 
 
-function teste(tmp){
-	var xhttp = new XMLHttpRequest();
-		xhttp.open("GET", "test.php?type=" + tmp, true);
-		xhttp.send();
-
-		return xhttp.onreadystatechange = function() {
-    		if (xhttp.readyState == 4 && xhttp.status == 200) {
-       			alert("My response :" + xhttp.responseText);
-       			return eval(xhttp.responseText);
-    		}
-		};
-}
-
 
 function replace(linha) {
 	var done = linha.split(" ");
 	var final= done[0] + " ";
 	for (var i = 1; i < done.length; i++){
-		var tmp = done[i];
-
-		var data = teste(tmp)
-			console.log("translate:" + data);
-			final = final.concat("<span data-toggle='tooltip' title=" + data + ">" + done[i] + "</span> ");
+		var tmp = done[i]; 
+    		
+    	final = final.concat("<span data-toggle='tooltip' title='Cada uma das metades (direita ou esquerda) do torax.'>" + tmp + "</span> ");
 		
 	}
 	return final;
 }
+
