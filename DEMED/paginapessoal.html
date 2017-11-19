@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>de·med - Página Pessoal</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <img class="img-logo-lado" src="images/logo.png" >
+ 
+    <div id= "historico" class="container">
+		<div id="estilo_historico" class="login-box animated" style= "position: relative; left: inherit">
+			<div class="box-header">
+				<h1>Histórico de Internamento </h1>
+			</div>
+            <h3 id=fghj>dia </h3>
+            <div align="left" style= "position: relative; left: 50px;">
+                <p>S:</p>
+                <p>O:</p>
+                <p>A:</p>
+                <p>P:</p>
+            </div>
+		</div>
+	</div>
+    
+    <div id= "identificacao" class="container">
+		<div id="estilo_identificacao" class="login-box animated" style= "position: relative; left: inherit">
+			<div class="box-header">
+				<h1>Identificação do doente </h1>
+			</div>
+            <div>
+                <img class="img-circle" src = "images/autista.png">
+                <i><p style= "font-size: 20px"> Filipe monteiro</p></i>
+                <div align="left" style= "position: relative; left: 50px;">
+                    <p>SNS:</p>
+                    <p>SUBSISTEMA:</p>
+                    <p>USF:</p>
+                </div>
+            </div>
+		</div>
+	</div>
+    
+    <div id= "internamentos" class="container">
+		<div id="estilo_internamentos" class="login-box animated" style= "position: relative; left: inherit">
+			<div class="box-header">
+				<h1>Internamentos</h1>
+			</div>
+            <div align="left" style= "position: relative; left: 50px;">
+                	<br/>
+                    <p>DATA 1</p>
+                    <p>DATA 1</p>
+                    <p>DATA 1</p>
+                </div>
+		</div>
+	</div>
+    
+    
+    
+    
+</body>
+
+<script>
+	$(document).ready(function () {
+    	$('#logo').addClass('animated fadeInDown');
+    	$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>
+
+</html>
