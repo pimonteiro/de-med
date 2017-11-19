@@ -6,10 +6,6 @@ import re
 import json
 import datetime
 
-s = []
-o = []
-a = []
-p = []
 def getMeaning(word):
     baseUrl = "http://www.infopedia.pt/dicionarios/termos-medicos/"
     try:
@@ -41,31 +37,37 @@ def parseNotes(path, s, o, a, p):
                     p.append(line)
 
 
+def buildJson(s, o, a, p, nome, sub, sns, centro):
+    sText = "".join(s).replace('\n', " ")
+    oText = "".join(o).replace('\n', " ")
+    aText = "".join(a).replace('\n', " ")
+    pText = "".join(p).replace('\n', " ")
+
+    user = { "nome":nome, "sns":sns, "sub_sistema":sub, "centro_saude":centro }
+
+    data = str(datetime.date.today())
+    dia = 1
+    inter = { "data": data, "anot":[{"dia":dia, "s":sText, "o":oText, "a":aText ,"p":pText}] }
+
+    jsonT = str(json.JSONEncoder().encode({"user":user, "internamentos":inter}))
+    return jsonT
+
 def main():
     s = []
     o = []
     a = []
     p = []
 
+    name = input("Nome: ")
+    sub = input("Sub-Sistema: ")
+    sns = input("SNS: ")
+    centro = input("Centro: ")
+
     parseNotes("anotacao.txt", s, o, a, p)
-    
-    sText = "".join(s).replace('\n', " ") 
-    oText = "".join(o).replace('\n', " ")
-    aText = "".join(a).replace('\n', " ")
-    pText = "".join(p).replace('\n', " ")
+    valor = buildJson(s, o, a, p, name, sub, sns, centro)
 
-    nome = "Filipe"
-    sub = "nenhum"
-    sns = "0000"
-    centro = "braga"
-    user = { "nome":nome, "sns":sns, "sub_sistema":sub, "centro_saude":centro }
 
-    
-    data = str(datetime.date.today())
-    dia = 1
-    inter = { "data": data, "anot":[{"dia":dia, "s":sText, "o":oText, "a":aText ,"p":pText}] } 
-    
-    jsonT = str(json.JSONEncoder().encode({"user":user, "internamentos":inter}))
-    print(jsonT)
+    print(valor)
+
 if __name__ == "__main__":
     main()
