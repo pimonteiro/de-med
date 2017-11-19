@@ -43,7 +43,7 @@ h2 {
 h3 {
 	text-transform: uppercase;
     font-size-adjust: auto;
-	color: white;
+	color: black;
 	font-weight: 400;
 	letter-spacing: 1px;
 	font-size: 1.4em;
@@ -231,7 +231,7 @@ p.small {
 }
 
 #identificacao {
-   position: fixed;
+   position: absolute;
     display: block;
     top: 70px;
     left: 10px;
@@ -241,7 +241,7 @@ p.small {
 }
 
 #internamentos {
-   position: fixed;
+   position: absolute;
     display: block;
     top: 420px;
     left: -70px;
@@ -251,7 +251,7 @@ p.small {
 }
 
 #historico {
-   position: fixed;
+   position: absolute;
     display: block;
     top: 140px;
     left: 190px;
@@ -260,5 +260,7 @@ p.small {
     width: 900px;
 }
 
-
+#texto_informacao {
+    width: 800px;
+}
 
