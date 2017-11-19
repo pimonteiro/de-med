@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 from bs4 import BeautifulSoup
 
@@ -65,7 +66,7 @@ def main():
     inter = { "data": data, "anot":[{"dia":dia, "s":sText, "o":oText, "a":aText ,"p":pText}] } 
     
     jsonF =  [user, inter] 
-    print(json.dumps(jsonF))
+    print(json.dumps(jsonF, ensure_ascii=False))
 
 
 if __name__ == "__main__":
